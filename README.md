@@ -20,4 +20,4 @@ brew upgrade mave
 See the [CLI documentation](https://github.com/maveio/mave-cli#readme) for usage
 and [security reporting](https://github.com/maveio/mave-cli/blob/main/SECURITY.md).
 
-Licensed under [AGPL-3.0-only](LICENSE).
+Licensed under [AGPL-3.0-or-later](LICENSE).

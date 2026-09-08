@@ -1,29 +1,29 @@
 class Mave < Formula
   desc "Manage Mave videos, collections, and uploads from the command line"
   homepage "https://github.com/maveio/mave-cli"
-  version "0.5.0"
+  version "0.1.0"
   license "AGPL-3.0-only"
 
   on_macos do
     depends_on macos: :ventura
     on_arm do
-      url "https://github.com/maveio/mave-cli/releases/download/v0.5.0/mave-0.5.0-macos_arm64.tar.gz"
-      sha256 "3202c65a4df222a154ef3a75cfaf415c26ac03225aaa81f6a17e9425d13c5005"
+      url "https://github.com/maveio/mave-cli/releases/download/v0.1.0/mave-0.1.0-macos_arm64.tar.gz"
+      sha256 "47972e2b584450c3cdc64d5c93b0a8cf75b73e3f920594d5aaf629bbda5d7ffc"
     end
     on_intel do
-      url "https://github.com/maveio/mave-cli/releases/download/v0.5.0/mave-0.5.0-macos_x86_64.tar.gz"
-      sha256 "2235d4ec985ae7458a72cfe29a209e4d18017749fbc85314d4d25ff931c87acf"
+      url "https://github.com/maveio/mave-cli/releases/download/v0.1.0/mave-0.1.0-macos_x86_64.tar.gz"
+      sha256 "a00983ac799b17c636f46ddd01eb91459e7d441c1248be463e6415734bcbea7a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/maveio/mave-cli/releases/download/v0.5.0/mave-0.5.0-linux_arm64.tar.gz"
-      sha256 "e8884b82695a0b4c5aa8de5823c4129778295827c5a1e485fb4c7dbf7bc3791f"
+      url "https://github.com/maveio/mave-cli/releases/download/v0.1.0/mave-0.1.0-linux_arm64.tar.gz"
+      sha256 "b8e547746d0519dc439823e4a130eff59bbf00d64247980084ae5d06cbda4ba2"
     end
     on_intel do
-      url "https://github.com/maveio/mave-cli/releases/download/v0.5.0/mave-0.5.0-linux_x86_64.tar.gz"
-      sha256 "278e29ec469a96470f2d0c1d59575ac0f97a3ba027f1b26dedc98d0593ac69a9"
+      url "https://github.com/maveio/mave-cli/releases/download/v0.1.0/mave-0.1.0-linux_x86_64.tar.gz"
+      sha256 "dfd3c38a89efa4e50ef2bdf08b1c2519840a64adf0ffe7486482a7ead43802b6"
     end
   end
 

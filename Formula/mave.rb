@@ -8,22 +8,22 @@ class Mave < Formula
     depends_on macos: :ventura
     on_arm do
       url "https://github.com/maveio/mave-cli/releases/download/v0.1.0/mave-0.1.0-macos_arm64.tar.gz"
-      sha256 "6733eb1b554d588cecde3084e1d4603aa2d2502e595bf3fd91ca1fb2a3ddf4d9"
+      sha256 "c16a0e3376f328f0834e6cd4078a52bce7670b85c2a13da5c56ed31c5f6853a3"
     end
     on_intel do
       url "https://github.com/maveio/mave-cli/releases/download/v0.1.0/mave-0.1.0-macos_x86_64.tar.gz"
-      sha256 "df3db728544ace4e904de56d0c4a8d123bb41b706855161305bbb0ea7d14057f"
+      sha256 "3d6c8a1ca0cee7fe54aa98079f6ac4dfc2be7c876d5295adb6f4dee2c010417f"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/maveio/mave-cli/releases/download/v0.1.0/mave-0.1.0-linux_arm64.tar.gz"
-      sha256 "871f088ad2d543edc3689c9ec662cd9a61ef4cf25f6a2fa7a94113a452dd4150"
+      sha256 "3267edeb2a8bbd07b4799d9b1c65e28da95f34614d2d0e23367fe6ff212c409a"
     end
     on_intel do
       url "https://github.com/maveio/mave-cli/releases/download/v0.1.0/mave-0.1.0-linux_x86_64.tar.gz"
-      sha256 "d20b8a296e1cfa5f9ee3a6a3c3c9710abe5589b8c8825a3a4cf056f6e7994308"
+      sha256 "67b18a5f53f22670e68ea9da6ff2d795d64201579227e717a563731da6193c2c"
     end
   end
 
@@ -39,6 +39,6 @@ class Mave < Formula
     assert_match "mave videos list", shell_output("#{bin}/mave --help")
     result = JSON.parse(shell_output("#{bin}/mave upload-token test-subject --token test-secret"))
     assert_equal "test-subject", result.fetch("subject")
-    assert_match "ongeldige optie", shell_output("#{bin}/mave --invalid-option 2>&1", 1)
+    assert_match "invalid option", shell_output("#{bin}/mave --invalid-option 2>&1", 1)
   end
 end
